@@ -1,0 +1,122 @@
+.footer {
+
+    @include mobile {
+        height: 550px;
+    }
+
+    .footer__list {
+        display: flex;
+        background-image: url(../img/footer-background.jpg);
+        background-color: rgba(0, 50, 50, 0.5);
+        width: 1598px;
+        margin: 0 auto;
+        height: 448px;
+        justify-content: space-between;    
+
+        @include tablet {
+            width: 100%;
+            flex-wrap: wrap;
+            min-height: 693px;
+            background-size: cover;
+            display: block;
+
+        }
+    
+        @include mobile {
+            width: 100%;
+            flex-wrap: wrap;
+            min-height: 550px;
+        }
+    }
+
+    .footer__item-img {
+        padding: 0 0 28px 330px;
+
+        @include tablet {
+            align-items: center;
+            padding: 0 0 0 45%;
+
+        }        
+        @include mobile {
+            align-items: center;
+            padding: 0 0 0 45%;
+        }
+    }
+
+    .footer__item-text {  
+        @include font (20px, 24px, 400);     
+        padding: 0 0 0 190px;
+        text-align: center;
+
+        @include tablet {
+            @include font (20px, 24px, 400);    
+            
+            padding: 0 0 0 ;
+        }
+    }
+
+    .footer__sub-heading {
+        display: block;
+    }
+
+    .footer__sub-heading-cursive {
+        font-size: 20px;
+        font-style: italic;
+        font-weight: 400;
+        line-height: 24px;
+        text-align: center;
+    }
+
+    .footer__item {
+        padding: 87px 0 0 0;
+
+        @include tablet {
+            padding: 54px 0 0 0;
+        }
+
+        @include mobile {
+            padding: 54px 0 0 0;
+        }
+    }
+
+    .footer__item-wrapper {
+        padding: 87px 0 0 0;
+        
+
+        @include tablet {
+            padding: 48px 0 0 0;
+        }
+
+        @include mobile {
+            padding: 59px 0 0 0;
+        }
+    }   
+
+    .footer__item-heading {
+        @include font (24px, 40px, 700);
+        padding: 80px 230px 0 0;
+        text-transform: uppercase;
+
+        @include tablet {
+            padding: 48px 0 0 44%;
+
+            @include font (24px, 40px, 700);    
+        }
+        @include mobile {
+            @include font (24px, 36px, 400);    
+        }
+    }
+
+    .footer__item-heading-text {      
+        @include font (18px, 40px, 400);
+        text-transform: uppercase;
+        padding: 0 230px 0 0;
+
+        @include tablet {
+            padding: 0 0 0 30%; 
+
+            @include font (18px, 27px, 400);   
+          
+        }
+    }
+}
