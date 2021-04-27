@@ -555,7 +555,7 @@ body {
   margin: 49px 0 100px;
 }
 
-.button {
+.button__wrapper-item {
   width: 211px;
   min-height: 47px;
   border-color: #FF6A6A;
@@ -564,7 +564,7 @@ body {
   position: relative;
 }
 
-.button:before {
+.button__wrapper-item:before {
   content: '';
   width: 26px;
   height: 24px;
@@ -573,6 +573,14 @@ body {
   background-image: url(../img/basket-button.svg);
   left: 24px;
   background-size: 26px 24px;
+}
+
+.button {
+  width: 211px;
+  min-height: 47px;
+  border-color: #FF6A6A;
+  background-color: #FBFBFB;
+  color: #F26376;
 }
 
 .privileges .privileges__list {
