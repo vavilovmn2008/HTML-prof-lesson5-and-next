@@ -1,0 +1,121 @@
+.collection__container {
+    width: 1141px;
+    height: 601px;
+    flex-wrap: wrap;
+    display: block;
+    margin: -64px auto;
+    border: 1px solid #EAEAEA;    
+    background-color: $white;
+    
+.women-collection {
+    @include font (14px, 17px, 300);
+    color: $dark-pink;
+    text-transform: uppercase;
+    margin: 65px 0 0 0;
+    text-align: center;
+    position: relative;
+    }
+
+.women-collection:before {
+        content: '';
+        width: 63px;
+        height: 3px;   
+        position: absolute;
+        top: 30px;    
+        background-image: url(../img/collection.png);       
+        margin: 0 auto;
+        left: 0;
+        right: 0;
+}
+
+.collection-heading__perfumery {
+        @include font (18px, 22px, 300);
+        color: $gray;
+        text-transform: uppercase;
+        margin: 27px 0 0 0;
+        text-align: center;
+    }
+
+    .collection-heading__text {
+        text-align: center;
+        @include font (14px, 19px, 300);
+        color: $lite-gray;
+        margin:  49px 0 32px 0;
+    }
+
+    .collection-heading__sub-text {
+        display: block;
+    }
+    .collection-heading__price {
+        @include font (24px, 29px, 300);
+        color: $dark-pink;
+        text-align: center;
+        position: relative;
+    }
+    .collection-heading__price::before {
+        content: '';
+        width: 641px;
+        height: 3px;   
+        position: absolute;
+        top: 65px;    
+        background-image: url(../img/line.png);       
+        right: 230px;  
+    }
+
+    .collection__choose {
+        @include font (14px, 17px, 400);
+        text-align: center;
+        text-transform: uppercase;
+        margin: 65px 0 0 0;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .choose__color {
+            color: $text-gray;
+            position: relative;
+    }
+
+    .choose__color:before {
+        content: '';       
+        width: 10px;
+        height: 5px;   
+        position: absolute;
+        top: 7px;    
+        background-image: url(../img/arrow-down.svg);       
+        left: 110px; 
+        background-size: 10px 5px ;
+    }
+
+    .choose__size {
+        color: $text-gray;
+        position: relative;
+}
+
+    .choose__size:before {
+        content: '';       
+        width: 10px;
+        height: 5px;   
+        position: absolute;
+        top: 7px;    
+        background-image: url(../img/arrow-down.svg);       
+        left: 93px; 
+        background-size: 10px 5px ;
+    }
+    .choose__quantity {
+        color: $text-gray;
+        position: relative;
+}
+
+    .choose__quantity:before {
+        content: '';       
+        width: 10px;
+        height: 5px;   
+        position: absolute;
+        top: 7px;    
+        background-image: url(../img/arrow-down.svg);       
+        left: 76px; 
+        background-size: 10px 5px ;
+    }
+
+}
