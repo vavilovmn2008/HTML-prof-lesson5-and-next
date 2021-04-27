@@ -1,0 +1,32 @@
+.button__wrapper {
+    text-align: center;
+    margin: 49px 0 100px;
+}
+
+.button__wrapper-item {
+    width: 211px;
+    min-height: 47px;
+    border-color: $dark-pink;
+    background-color: $white;
+    color: $text-pink;
+    position: relative;
+}
+
+.button__wrapper-item:before {
+    content: '';       
+    width: 26px;
+    height: 24px;   
+    position: absolute;
+    top: 10px;    
+    background-image: url(../img/basket-button.svg);       
+    left: 24px; 
+    background-size: 26px 24px;
+}
+
+.button {
+    width: 211px;
+    min-height: 47px;
+    border-color: $dark-pink;
+    background-color: $white;
+    color: $text-pink;   
+}
