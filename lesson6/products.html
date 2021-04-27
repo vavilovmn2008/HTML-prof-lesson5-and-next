@@ -6,28 +6,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shop</title>
-    <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="stylesheet" href="./CSS/style.css">    
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,400&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="./cdn/bootstrap.css">
+        <link rel="stylesheet" href="./cdn/bootstrap.css">
 </head>
 
 <body>
     <header class="header">
         <div class="container header__wrapper">
             <div>
-                <img class="header__logo" src="./img/logo-icon.svg" alt="logo" width="44" height="38">
+                <a href="index.html"><img class="header__logo" src="./img/logo-icon.svg" alt="logo" width="44" height="38"></a>
                 <img class="header__search" src="./img/loupe-icon.svg" alt="loupe" width="26" height="27">
             </div>
             <div>
                 <button class="header__button" type="button">
                     <img src="./img/burger-icon.svg" alt="burger" width="32" height="23">
                 </button>
-                    <a href="#" class="header__link header__link--mobile-hidden">
+                    <a href="registration.html" class="header__link">
                         <img src="./img/person.svg" alt="person" width="29" height="29">
                     </a>
-                    <a href="#" class="header__link header__link--mobile-hidden">
+                    <a href="products.html" class="header__link">
                         <img src="./img/basket.svg" alt="basket" width="29" height="32">
                     </a>
                     <nav class="header__navigation">
@@ -69,93 +69,54 @@
         </div>
     </header>
     <main>
-        <section class="promo">
-            <img class="promo__img" src="./img/man.jpg" alt="man" width="800" height="765">
-            <div class="promo__heading-wrapper">
-                <h1 class="promo__heading">The brand <span class="promo__sub-heading">of luxerious <span class="promo__sub-heading-pink">fashion</span></span></h1>
-            </div>
+        <section class="arrivals">
+            <h1 class="arrivals__heading">new arrivals</h1>
+            <ul class="new-arrivals__list">
+                <li class="new-arrivals__item">home / </li>
+                <li class="new-arrivals__item"> men / </li>
+                <li class="new-arrivals__item-pink"> new arrivals</li>
+            </ul>           
         </section>
-        <section  class="categories container">
-            <h2 class="visually-hidden">Categories</h2>
-            <ul class="categories__list">
-                <li class="categories__item categories__item--woman">
-                    <div class="categories__item-wrapper-woman">
-                    <p class="categories__text">30% off</p>
-                    <h3 class="categories__heading">for women</h3>
-                    </div>
-                </li>
-                <li class="categories__item categories__item--man">
-                    <div class="categories__item-wrapper-man">
-                    <p class="categories__text">hot deal</p>
-                    <h3 class="categories__heading">for men</h3>
-                    </div>
-                </li>
-                <li class="categories__item categories__item--kids">
-                    <div class="categories__item-wrapper-kids">
-                    <p class="categories__text">new arrivals</p>
-                    <h3 class="categories__heading">for kids</h3>
-                    </div>
-                </li>
-                <li class="categories__item categories__item--accessories">
-                    <div class="categories__item-wrapper-accessories">
-                    <p class="categories__text">luxirous & trendy</p>
-                    <h3 class="categories__heading">accesories</h3>
-                    </div>
-                </li>
-            </ul>
+        <section class="product-arrivals">
+            <img src="./img/product-arrivals.jpg" alt="product-arrivals" width="579" height="724">
         </section>
-        <section class="products container">
-            <div class="products__heading-wrapper">
-            <h2 class="products__heading">Fetured Items</h2>
-            <p class="products__text">Shop for items based on what we featured in this week</p>
-            </div>
-            <ul class="products__list">
-                <li class="products__item">
-                    <img class="products__item-img" src="./img/product-1.jpg" alt="product-1" width="360" height="420">
-                    <h3 class="products__item-heading">ellery x m'o capsule</h3>
-                    <p class="products__item-text">Known for her sculptural takes on traditional <span class="products__sub-heading">tailoring, Australian arbiter of cool Kym Ellery teams <span class="products__sub-heading">up with Moda Operandi.</span></span></p>
-                    <p class="products__item-price">$52.00</p>
-                </li>
-                <li class="products__item">
-                    <div class="products-item-wrapper">
-                    <img class="products__item-img"src="./img/product-2.jpg" alt="product-2" width="360" height="420">
-                    <button type="button">Add to Cart</button>
-                    </div>
-                    <h3 class="products__item-heading">ellery x m'o capsule</h3>
-                    <p class="products__item-text">Known for her sculptural takes on traditional <span class="products__sub-heading">tailoring, Australian arbiter of cool Kym Ellery teams <span class="products__sub-heading">up with Moda Operandi.</span></span></p>
-                    <p class="products__item-price">$52.00</p>                    
-                </li>
-                <li class="products__item">
-                    <img class="products__item-img"src="./img/product-3.jpg" alt="product-3" width="360" height="420">
-                    <h3 class="products__item-heading">ellery x m'o capsule</h3>
-                    <p class="products__item-text">Known for her sculptural takes on traditional <span class="products__sub-heading">tailoring, Australian arbiter of cool Kym Ellery teams <span class="products__sub-heading">up with Moda Operandi.</span></span></p>
-                    <p class="products__item-price">$52.00</p>                    
-                </li>
-                
-                <li class="products__item">
-                    <img class="products__item-img"src="./img/product-4.jpg" alt="product-4" width="360" height="420">
-                    <h3 class="products__item-heading">ellery x m'o capsule</h3>
-                    <p class="products__item-text">Known for her sculptural takes on traditional <span class="products__sub-heading">tailoring, Australian arbiter of cool Kym Ellery teams <span class="products__sub-heading">up with Moda Operandi.</span></span></p>
-                    <p class="products__item-price">$52.00</p>                    
-                </li>
-                <li class="products__item">
-                    <img class="products__item-img"src="./img/product-5.jpg" alt="product-5" width="360" height="420">
-                    <h3 class="products__item-heading">ellery x m'o capsule</h3>
-                    <p class="products__item-text">Known for her sculptural takes on traditional <span class="products__sub-heading">tailoring, Australian arbiter of cool Kym Ellery teams <span class="products__sub-heading">up with Moda Operandi.</span></span></p>
-                    <p class="products__item-price">$52.00</p>                    
-                </li>
-                <li class="products__item">
-                    <img class="products__item-img"src="./img/product-6.jpg" alt="product-6" width="360" height="420">
-                    <h3 class="products__item-heading">ellery x m'o capsule</h3>
-                    <p class="products__item-text">Known for her sculptural takes on traditional <span class="products__sub-heading">tailoring, Australian arbiter of cool Kym Ellery teams <span class="products__sub-heading">up with Moda Operandi.</span></span></p>
-                    <p class="products__item-price">$52.00</p>                    
-                </li>             
-            </ul>
+        <section class="collection__container"> 
+            <h2 class="women-collection">women collection</h2>
+            <p class="collection-heading__perfumery">moschino cheap and chic</p>
+            <p class="collection-heading__text">Compellingly actualize fully researched processes before proactive outsourcing.<span class="collection-heading__sub-text">Progressively syndicate collaborative architectures before cutting-edge services. Completely<span class="collection-heading__sub-text">visualize parallel core competencies rather than exceptional portals. </span></span></p>
+            <p class="collection-heading__price">$561</p>
+            <ul class="collection__choose">
+                <li class="choose__color">choose color</li>
+                <li class="choose__size">choose size</li>
+                <li class="choose__quantity">quantity</li>
+            </ul>          
             <div class="button__wrapper">
-            <button class="button">Browse All Product</button>
-            </div>
+                <button class="button__wrapper-item">Add to Cart</button>
+            </div>  
+        </section>
+        <section class="card-group">
+            <ul class="card-group__list">
+                <li class="card-group__item">
+                    <img class="card-group__item-img" src="./img/product-4.jpg" alt="product-1" width="360" height="420">
+                    <h3 class="card-group__item-heading">ellery x m'o capsule</h3>
+                    <p class="card-group__item-text">Known for her sculptural takes on traditional <span class="products__sub-heading">tailoring, Australian arbiter of cool Kym Ellery teams <span class="products__sub-heading">up with Moda Operandi.</span></span></p>
+                    <p class="card-group__item-price">$52.00</p>
+                </li>
+                <li class="card-group__item">
+                    <img class="card-group__item-img" src="./img/product-3.jpg" alt="product-1" width="360" height="420">
+                    <h3 class="card-group__item-heading">ellery x m'o capsule</h3>
+                    <p class="card-group__item-text">Known for her sculptural takes on traditional <span class="products__sub-heading">tailoring, Australian arbiter of cool Kym Ellery teams <span class="products__sub-heading">up with Moda Operandi.</span></span></p>
+                    <p class="card-group__item-price">$52.00</p>
+                </li>
+                <li class="card-group__item">
+                    <img class="card-group__item-img" src="./img/product-6.jpg" alt="product-1" width="360" height="420">
+                    <h3 class="card-group__item-heading">ellery x m'o capsule</h3>
+                    <p class="card-group__item-text">Known for her sculptural takes on traditional <span class="products__sub-heading">tailoring, Australian arbiter of cool Kym Ellery teams <span class="products__sub-heading">up with Moda Operandi.</span></span></p>
+                    <p class="card-group__item-price">$52.00</p>
+                </li>                              
+            </ul>            
         </section>     
-        <section  class="privileges">
+        <!-- <section  class="privileges">
             <h2  class="visually-hidden">privileges</h2>
             <ul class="privileges__list">
                 <li class="privileges__item">
@@ -174,7 +135,56 @@
                     <p class="privileges__item-text">Worldwide delivery on all. authorit tively morph <span class="privileges__sub-heading">next-generation innov tion with extensive models.</span></p>
                 </li>
             </ul>       
-        </section>
+          </section>> -->
+        <!-- <section  class="loyalty__container">
+            <div class="loyalty-form">                
+                <form action="form">
+                    <fieldset>
+                        <legend>Your Name</legend>
+                        <form action="">
+                            <input type="text" placeholder="First Name">
+                        </form>
+                        <form action="">
+                            <input type="text" placeholder="Last Name">
+                        </form>
+                        <form action="" class="radio">
+                            <input type="radio" id="contactChoice1" name="contact" value="male">
+                            <label class="label" for="conactChoice1">Male</label>
+                            <input type="radio" id="contactChoice2" name="contact" value="female">
+                            <label class="label" for="conactChoice2">Female</label>
+                        </form>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Login details</legend>
+                        <form action="">
+                            <input type="email" placeholder="Email">
+                        </form>
+                        <form action="">
+                            <input type="password" placeholder="Password">
+                        </form>                        
+                    </fieldset>
+                </form>    
+                <h2 class="form__text">Please use 8 or more characters, with at least 1 number and a <span class="form__sub-text">mixture of uppercase and lowercase letters</span></h2>
+                <button class="form__button">join now</button>
+                </form>
+            </div>
+            <div class="loyalty">
+                <h2 class="visually-hidden">loyalty has its perks</h2>
+                <ul class="loyalty__list">
+                    <li class="loyalty__item">                    
+                        <h3 class="loyalty__heading">loyalty has its perks</h3>
+                        <p class="loyalty__text">Get in on the loyalty program where you can earn points and <span class="loyalty__sub-text">unlock serious perks. Starting with these as soon as you join:</span></p>
+                    </li>
+                    <li class="loyalty__item-wrapper">
+                        <h3 class="loyalty__item-wrapper-text">15% off welcome offer</h3>
+                        <h3 class="loyalty__item-wrapper-text">Free shipping, returns and exchanges on all orders</h3>
+                        <h3 class="loyalty__item-wrapper-text">$10 off a purchase on your birthday</h3>
+                        <h3 class="loyalty__item-wrapper-text">Early access to products</h3>
+                        <h3 class="loyalty__item-wrapper-text">Exclusive offers & rewards</h3>
+                    </li>               
+                </ul>
+            </div>
+        </section>         -->
     </main>
     <footer>
         <section class="footer">            
