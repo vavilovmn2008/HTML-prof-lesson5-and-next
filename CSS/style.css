@@ -89,6 +89,7 @@ body {
   background-color: #222222;
   margin: 0 auto;
   width: 1600px;
+  position: relative;
 }
 
 .header .header__wrapper {
@@ -104,17 +105,30 @@ body {
           align-items: center;
 }
 
-.header .header__navigation {
-  display: none;
-}
-
 .header .header__logo {
   margin: 0 41px 0 0;
+}
+
+.header .header__navigation {
+  display: none;
+  min-width: 232px;
+  height: 764px;
+  background-color: #FBFBFB;
+  top: 75px;
 }
 
 .header .header__button {
   border: none;
   background-color: transparent;
+}
+
+.header .header__button:hover + .header__navigation {
+  border: 1px solid red;
+  display: block;
+}
+
+.header .header__navigation:hover {
+  display: block;
 }
 
 .header .header__link {
@@ -555,7 +569,7 @@ body {
   margin: 49px 0 100px;
 }
 
-.button {
+.button__wrapper-item {
   width: 211px;
   min-height: 47px;
   border-color: #FF6A6A;
@@ -564,7 +578,7 @@ body {
   position: relative;
 }
 
-.button:before {
+.button__wrapper-item:before {
   content: '';
   width: 26px;
   height: 24px;
@@ -573,6 +587,14 @@ body {
   background-image: url(../img/basket-button.svg);
   left: 24px;
   background-size: 26px 24px;
+}
+
+.button {
+  width: 211px;
+  min-height: 47px;
+  border-color: #FF6A6A;
+  background-color: #FBFBFB;
+  color: #F26376;
 }
 
 .privileges .privileges__list {

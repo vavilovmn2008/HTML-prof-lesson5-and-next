@@ -3,24 +3,41 @@
     background-color: $dark-blue;
     margin: 0 auto; 
     width: 1600px;
+    position: relative;
+
     .header__wrapper {
         min-height: 75px;
         display: flex;
         justify-content: space-between;
         align-items: center;
     }
-    
-    .header__navigation {
-        display: none;
-    }
-    
+        
     .header__logo {
         margin: 0 41px 0 0;
     }
     
+  
+    .header__navigation {
+      
+        display: none;
+        min-width: 232px;
+        height:764px;
+        background-color: $white;
+        top:75px;
+    }   
+
     .header__button {
         border: none;
         background-color: transparent;
+    }
+
+    .header__button:hover+.header__navigation {
+        border: 1px solid red;
+        display: block;
+    }
+
+    .header__navigation:hover {
+        display: block ;
     }
     
     .header__link {
